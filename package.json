@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/asato-oi/webpack-learning#readme",
   "devDependencies": {
+    "css-loader": "6.7.3",
     "webpack": "5.78.0",
     "webpack-cli": "5.0.1"
   }
