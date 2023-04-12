@@ -4,9 +4,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/main.js",
   output: {
     path: path.resolve(__dirname, "./dist"),
+    filename:"js/main.js"
   },
   module: {
     rules: [
@@ -25,7 +26,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "my.css",
+      filename: "./styles/main.css",
     }),
     new HtmlWebpackPlugin({
       template: "./src/index.html",
