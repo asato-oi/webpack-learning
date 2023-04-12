@@ -2,7 +2,7 @@ lockfileVersion: '6.0'
 
 devDependencies:
   clean-webpack-plugin:
-    specifier: ^4.0.0
+    specifier: 4.0.0
     version: 4.0.0(webpack@5.78.0)
   css-loader:
     specifier: 6.7.3
