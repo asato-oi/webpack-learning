@@ -7,7 +7,7 @@ module.exports = {
   entry: "./src/main.js",
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename:"js/main.js"
+    filename: "js/main.js",
   },
   module: {
     rules: [
@@ -19,6 +19,17 @@ module.exports = {
           },
           {
             loader: "css-loader",
+          },
+        ],
+      },
+      {
+        test: /\.png/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              esModule: false,
+            },
           },
         ],
       },
