@@ -23,15 +23,20 @@ module.exports = {
         ],
       },
       {
-        test: /\.png/,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              esModule: false,
-            },
-          },
-        ],
+        test: /\.png|\.jpg/,
+        type: "asset/resource",
+        generator: {
+          filename: "img/[name][ext]",
+        },
+        // use: [
+        //   {
+        //     loader: "file-loader",
+        //     options: {
+        //       esModule: false,
+        //       name: "img/[name].[ext]",
+        //     },
+        //   },
+        // ],
       },
     ],
   },
