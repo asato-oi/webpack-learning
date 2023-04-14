@@ -28,15 +28,6 @@ module.exports = {
         generator: {
           filename: "img/[name][ext]",
         },
-        // use: [
-        //   {
-        //     loader: "file-loader",
-        //     options: {
-        //       esModule: false,
-        //       name: "img/[name].[ext]",
-        //     },
-        //   },
-        // ],
       },
       {
         test: /\.pug/,
@@ -57,11 +48,11 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/html/index.pug",
-      filename: "html/index.html",
+      filename: "index.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/html/about.pug",
-      filename: "html/about.html",
+      filename: "about.html",
     }),
     new CleanWebpackPlugin(),
   ],
