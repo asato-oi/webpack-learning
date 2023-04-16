@@ -1,3 +1,4 @@
+import "./js/module2.jsx";
 import module1 from "./js/module1";
 import "./styles/main.scss";
 
